@@ -1,0 +1,1135 @@
+{
+  "cuestionario": [
+    {
+      "id": 1,
+      "nombre": "Comidas del Mundo",
+      "descripcion": "Cuestionario sobre comidas del mundo"
+    },
+    {
+      "id": 2,
+      "nombre": "Bebidas Populares",
+      "descripcion": "Cuestionario sobre bebidas populares"
+    },
+    {
+      "id": 3,
+      "nombre": "Dulces y Postres",
+      "descripcion": "Cuestionario sobre dulces y postres"
+    },
+    {
+      "id": 4,
+      "nombre": "Comidas Rápidas",
+      "descripcion": "Cuestionario sobre comidas rápidas"
+    },
+    {
+      "id": "0627",
+      "nombre": "Nuevo Q",
+      "descripcion": "Si sale numerico el id"
+    }
+  ],
+  "pregunta": [
+    {
+      "id": "1",
+      "id_cuestionario": "1",
+      "tipo": "MO",
+      "planteo": "¿Cuál de estas comidas es típica de México?",
+      "opciones": [
+        {
+          "id": "1",
+          "texto": "Tacos"
+        },
+        {
+          "id": "2",
+          "texto": "Sushi"
+        },
+        {
+          "id": "3",
+          "texto": "Pizza"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "id_cuestionario": "1",
+      "tipo": "MO",
+      "planteo": "¿Qué país es famoso por el sushi?",
+      "opciones": [
+        {
+          "id": "1",
+          "texto": "Japón"
+        },
+        {
+          "id": "2",
+          "texto": "Italia"
+        },
+        {
+          "id": "3",
+          "texto": "Argentina"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "id_cuestionario": "1",
+      "tipo": "MO",
+      "planteo": "¿De qué país es típica la lasaña?",
+      "opciones": [
+        {
+          "id": "1",
+          "texto": "Italia"
+        },
+        {
+          "id": "2",
+          "texto": "India"
+        },
+        {
+          "id": "3",
+          "texto": "Francia"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "id_cuestionario": "1",
+      "tipo": "MO",
+      "planteo": "¿Qué ingrediente es base en el hummus?",
+      "opciones": [
+        {
+          "id": "1",
+          "texto": "Garbanzos"
+        },
+        {
+          "id": "2",
+          "texto": "Lentejas"
+        },
+        {
+          "id": "3",
+          "texto": "Papa"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "id_cuestionario": "1",
+      "tipo": "MO",
+      "planteo": "¿Cuál de estas comidas proviene de Perú?",
+      "opciones": [
+        {
+          "id": "1",
+          "texto": "Ceviche"
+        },
+        {
+          "id": "2",
+          "texto": "Goulash"
+        },
+        {
+          "id": "3",
+          "texto": "Curry"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "id_cuestionario": "1",
+      "tipo": "MO",
+      "planteo": "¿Qué plato se asocia con España?",
+      "opciones": [
+        {
+          "id": "1",
+          "texto": "Paella"
+        },
+        {
+          "id": "2",
+          "texto": "Hamburguesa"
+        },
+        {
+          "id": "3",
+          "texto": "Pho"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "id_cuestionario": "1",
+      "tipo": "MO",
+      "planteo": "¿Qué fruta es común en la cocina tropical?",
+      "opciones": [
+        {
+          "id": "1",
+          "texto": "Mango"
+        },
+        {
+          "id": "2",
+          "texto": "Manzana"
+        },
+        {
+          "id": "3",
+          "texto": "Uva"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "id_cuestionario": "1",
+      "tipo": "MO",
+      "planteo": "¿Qué país es conocido por el kimchi?",
+      "opciones": [
+        {
+          "id": "1",
+          "texto": "Corea del Sur"
+        },
+        {
+          "id": "2",
+          "texto": "China"
+        },
+        {
+          "id": "3",
+          "texto": "Vietnam"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "id_cuestionario": "1",
+      "tipo": "MO",
+      "planteo": "¿Qué alimento se sirve en una baguette tradicional?",
+      "opciones": [
+        {
+          "id": "1",
+          "texto": "Jamón y queso"
+        },
+        {
+          "id": "2",
+          "texto": "Tofu y arroz"
+        },
+        {
+          "id": "3",
+          "texto": "Carne molida"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "id_cuestionario": "1",
+      "tipo": "MO",
+      "planteo": "¿Cuál de estos platillos es árabe?",
+      "opciones": [
+        {
+          "id": "1",
+          "texto": "Falafel"
+        },
+        {
+          "id": "2",
+          "texto": "Sopa miso"
+        },
+        {
+          "id": "3",
+          "texto": "Schnitzel"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "id_cuestionario": "1",
+      "tipo": "TEXTO",
+      "planteo": "Describe tu comida favorita y cómo se prepara."
+    },
+    {
+      "id": "12",
+      "id_cuestionario": "1",
+      "tipo": "TEXTO",
+      "planteo": "¿Qué plato tradicional se sirve en las fiestas de tu país?"
+    },
+    {
+      "id": "13",
+      "id_cuestionario": "1",
+      "tipo": "TEXTO",
+      "planteo": "¿Cuál es tu experiencia con la comida tailandesa?"
+    },
+    {
+      "id": "14",
+      "id_cuestionario": "1",
+      "tipo": "TEXTO",
+      "planteo": "¿Qué ingredientes usas para preparar una pizza casera?"
+    },
+    {
+      "id": "15",
+      "id_cuestionario": "1",
+      "tipo": "TEXTO",
+      "planteo": "¿Qué plato internacional te gustaría probar y por qué?"
+    },
+    {
+      "id": "16",
+      "id_cuestionario": "1",
+      "tipo": "TEXTO",
+      "planteo": "Describe una comida familiar que recuerdes con cariño."
+    },
+    {
+      "id": "17",
+      "id_cuestionario": "1",
+      "tipo": "TEXTO",
+      "planteo": "¿Qué diferencias notas entre la comida de tu país y la extranjera?"
+    },
+    {
+      "id": "18",
+      "id_cuestionario": "1",
+      "tipo": "TEXTO",
+      "planteo": "¿Cómo varía la comida según la región de tu país?"
+    },
+    {
+      "id": "19",
+      "id_cuestionario": "1",
+      "tipo": "TEXTO",
+      "planteo": "¿Qué comida recomendarías a un turista que visita tu país?"
+    },
+    {
+      "id": "20",
+      "id_cuestionario": "1",
+      "tipo": "TEXTO",
+      "planteo": "¿Qué opinas de la comida vegetariana tradicional?"
+    },
+    {
+      "id": "1",
+      "id_cuestionario": "2",
+      "tipo": "MO",
+      "planteo": "¿Qué bebida contiene cafeína?",
+      "opciones": [
+        {
+          "id": "1",
+          "texto": "Café"
+        },
+        {
+          "id": "2",
+          "texto": "Agua"
+        },
+        {
+          "id": "3",
+          "texto": "Leche"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "id_cuestionario": "2",
+      "tipo": "MO",
+      "planteo": "¿Cuál es una bebida típica en Argentina?",
+      "opciones": [
+        {
+          "id": "1",
+          "texto": "Mate"
+        },
+        {
+          "id": "2",
+          "texto": "Té verde"
+        },
+        {
+          "id": "3",
+          "texto": "Coca-Cola"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "id_cuestionario": "2",
+      "tipo": "MO",
+      "planteo": "¿Qué bebida se elabora con uvas?",
+      "opciones": [
+        {
+          "id": "1",
+          "texto": "Vino"
+        },
+        {
+          "id": "2",
+          "texto": "Jugo de naranja"
+        },
+        {
+          "id": "3",
+          "texto": "Té"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "id_cuestionario": "2",
+      "tipo": "MO",
+      "planteo": "¿Qué bebida es típica del desayuno inglés?",
+      "opciones": [
+        {
+          "id": "1",
+          "texto": "Té negro"
+        },
+        {
+          "id": "2",
+          "texto": "Cerveza"
+        },
+        {
+          "id": "3",
+          "texto": "Leche de coco"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "id_cuestionario": "2",
+      "tipo": "MO",
+      "planteo": "¿Cuál es una bebida fermentada?",
+      "opciones": [
+        {
+          "id": "1",
+          "texto": "Kéfir"
+        },
+        {
+          "id": "2",
+          "texto": "Leche"
+        },
+        {
+          "id": "3",
+          "texto": "Agua"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "id_cuestionario": "2",
+      "tipo": "MO",
+      "planteo": "¿Cuál de estas es una bebida sin alcohol?",
+      "opciones": [
+        {
+          "id": "1",
+          "texto": "Jugo"
+        },
+        {
+          "id": "2",
+          "texto": "Cerveza"
+        },
+        {
+          "id": "3",
+          "texto": "Vino"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "id_cuestionario": "2",
+      "tipo": "MO",
+      "planteo": "¿Qué bebida es popular en Estados Unidos?",
+      "opciones": [
+        {
+          "id": "1",
+          "texto": "Refresco"
+        },
+        {
+          "id": "2",
+          "texto": "Agua de coco"
+        },
+        {
+          "id": "3",
+          "texto": "Chicha"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "id_cuestionario": "2",
+      "tipo": "MO",
+      "planteo": "¿Cuál se considera una bebida energética?",
+      "opciones": [
+        {
+          "id": "1",
+          "texto": "Bebida energética"
+        },
+        {
+          "id": "2",
+          "texto": "Agua mineral"
+        },
+        {
+          "id": "3",
+          "texto": "Café descafeinado"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "id_cuestionario": "2",
+      "tipo": "MO",
+      "planteo": "¿Qué bebida acompaña comúnmente un desayuno continental?",
+      "opciones": [
+        {
+          "id": "1",
+          "texto": "Jugo de naranja"
+        },
+        {
+          "id": "2",
+          "texto": "Soda"
+        },
+        {
+          "id": "3",
+          "texto": "Té chai"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "id_cuestionario": "2",
+      "tipo": "MO",
+      "planteo": "¿Qué bebida típica de Asia es conocida por sus burbujas?",
+      "opciones": [
+        {
+          "id": "1",
+          "texto": "Bubble tea"
+        },
+        {
+          "id": "2",
+          "texto": "Agua tónica"
+        },
+        {
+          "id": "3",
+          "texto": "Jugo de manzana"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "id_cuestionario": 2,
+      "tipo": "TEXTO",
+      "planteo": "Describe cómo preparas una infusión que te guste."
+    },
+    {
+      "id": "12",
+      "id_cuestionario": "2",
+      "tipo": "TEXTO",
+      "planteo": "¿Cuál es tu bebida favorita y por qué?"
+    },
+    {
+      "id": "13",
+      "id_cuestionario": "2",
+      "tipo": "TEXTO",
+      "planteo": "¿Qué bebida típica se consume en las celebraciones de tu país?"
+    },
+    {
+      "id": "14",
+      "id_cuestionario": "2",
+      "tipo": "TEXTO",
+      "planteo": "¿Qué opinas sobre el consumo de bebidas energéticas?"
+    },
+    {
+      "id": "15",
+      "id_cuestionario": "2",
+      "tipo": "TEXTO",
+      "planteo": "¿Has probado alguna bebida tradicional de otro país? Descríbela."
+    },
+    {
+      "id": "16",
+      "id_cuestionario": "2",
+      "tipo": "TEXTO",
+      "planteo": "¿Qué bebida recomendarías para un día caluroso?"
+    },
+    {
+      "id": "17",
+      "id_cuestionario": "2",
+      "tipo": "TEXTO",
+      "planteo": "¿Qué ingredientes lleva una limonada casera?"
+    },
+    {
+      "id": "18",
+      "id_cuestionario": "2",
+      "tipo": "TEXTO",
+      "planteo": "¿Con qué bebida acompañas tus comidas?"
+    },
+    {
+      "id": "19",
+      "id_cuestionario": "2",
+      "tipo": "TEXTO",
+      "planteo": "¿Qué bebida prepararías para una cita?"
+    },
+    {
+      "id": "20",
+      "id_cuestionario": "2",
+      "tipo": "TEXTO",
+      "planteo": "¿Cómo afecta la cafeína a tu cuerpo?"
+    },
+    {
+      "id": "1",
+      "id_cuestionario": "3",
+      "tipo": "MO",
+      "planteo": "¿Qué postre es típico de Francia?",
+      "opciones": [
+        {
+          "id": "1",
+          "texto": "Crème brûlée"
+        },
+        {
+          "id": "2",
+          "texto": "Dulce de leche"
+        },
+        {
+          "id": "3",
+          "texto": "Churros"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "id_cuestionario": "3",
+      "tipo": "MO",
+      "planteo": "¿Qué dulce se asocia con Halloween?",
+      "opciones": [
+        {
+          "id": "1",
+          "texto": "Caramelos"
+        },
+        {
+          "id": "2",
+          "texto": "Galletas de Navidad"
+        },
+        {
+          "id": "3",
+          "texto": "Panettone"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "id_cuestionario": "3",
+      "tipo": "MO",
+      "planteo": "¿Qué ingrediente es esencial en un brownie?",
+      "opciones": [
+        {
+          "id": "1",
+          "texto": "Chocolate"
+        },
+        {
+          "id": "2",
+          "texto": "Queso"
+        },
+        {
+          "id": "3",
+          "texto": "Zanahoria"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "id_cuestionario": "3",
+      "tipo": "MO",
+      "planteo": "¿Qué fruta suele llevar una tarta de manzana?",
+      "opciones": [
+        {
+          "id": "1",
+          "texto": "Manzana"
+        },
+        {
+          "id": "2",
+          "texto": "Pera"
+        },
+        {
+          "id": "3",
+          "texto": "Ciruela"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "id_cuestionario": "3",
+      "tipo": "MO",
+      "planteo": "¿Qué postre argentino es muy popular?",
+      "opciones": [
+        {
+          "id": "1",
+          "texto": "Alfajor"
+        },
+        {
+          "id": "2",
+          "texto": "Tiramisú"
+        },
+        {
+          "id": "3",
+          "texto": "Baklava"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "id_cuestionario": "3",
+      "tipo": "MO",
+      "planteo": "¿Qué se utiliza para decorar un pastel?",
+      "opciones": [
+        {
+          "id": "1",
+          "texto": "Crema"
+        },
+        {
+          "id": "2",
+          "texto": "Pan rallado"
+        },
+        {
+          "id": "3",
+          "texto": "Aceite"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "id_cuestionario": "3",
+      "tipo": "MO",
+      "planteo": "¿Qué país es famoso por el baklava?",
+      "opciones": [
+        {
+          "id": "1",
+          "texto": "Turquía"
+        },
+        {
+          "id": "2",
+          "texto": "Suecia"
+        },
+        {
+          "id": "3",
+          "texto": "Chile"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "id_cuestionario": "3",
+      "tipo": "MO",
+      "planteo": "¿Qué ingrediente es común en una gelatina?",
+      "opciones": [
+        {
+          "id": "1",
+          "texto": "Grenetina"
+        },
+        {
+          "id": "2",
+          "texto": "Harina"
+        },
+        {
+          "id": "3",
+          "texto": "Vinagre"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "id_cuestionario": "3",
+      "tipo": "MO",
+      "planteo": "¿Qué dulce se prepara en Navidad?",
+      "opciones": [
+        {
+          "id": "1",
+          "texto": "Panettone"
+        },
+        {
+          "id": "2",
+          "texto": "Helado"
+        },
+        {
+          "id": "3",
+          "texto": "Flan"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "id_cuestionario": "3",
+      "tipo": "MO",
+      "planteo": "¿Qué postre suele comerse frío?",
+      "opciones": [
+        {
+          "id": "1",
+          "texto": "Helado"
+        },
+        {
+          "id": "2",
+          "texto": "Donas"
+        },
+        {
+          "id": "3",
+          "texto": "Tostadas"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "id_cuestionario": "3",
+      "tipo": "TEXTO",
+      "planteo": "Describe tu postre favorito."
+    },
+    {
+      "id": "12",
+      "id_cuestionario": "3",
+      "tipo": "TEXTO",
+      "planteo": "¿Cómo se prepara una torta básica?"
+    },
+    {
+      "id": "13",
+      "id_cuestionario": "3",
+      "tipo": "TEXTO",
+      "planteo": "¿Qué recuerdos te trae un dulce específico?"
+    },
+    {
+      "id": "14",
+      "id_cuestionario": "3",
+      "tipo": "TEXTO",
+      "planteo": "¿Cuál es el postre típico en cumpleaños?"
+    },
+    {
+      "id": "15",
+      "id_cuestionario": "3",
+      "tipo": "TEXTO",
+      "planteo": "¿Has probado postres de otros países? Menciona uno."
+    },
+    {
+      "id": "16",
+      "id_cuestionario": "3",
+      "tipo": "TEXTO",
+      "planteo": "¿Qué postres preparas en casa?"
+    },
+    {
+      "id": "17",
+      "id_cuestionario": "3",
+      "tipo": "TEXTO",
+      "planteo": "¿Qué dulce prefieres para acompañar el café?"
+    },
+    {
+      "id": "18",
+      "id_cuestionario": "3",
+      "tipo": "TEXTO",
+      "planteo": "¿Cómo se hace un flan casero?"
+    },
+    {
+      "id": "19",
+      "id_cuestionario": "3",
+      "tipo": "TEXTO",
+      "planteo": "¿Qué ingredientes usas para una gelatina?"
+    },
+    {
+      "id": "20",
+      "id_cuestionario": "3",
+      "tipo": "TEXTO",
+      "planteo": "¿Qué diferencias hay entre postres fríos y calientes?"
+    },
+    {
+      "id": "1",
+      "id_cuestionario": "4",
+      "tipo": "MO",
+      "planteo": "¿Qué comida rápida es común en EE.UU.?",
+      "opciones": [
+        {
+          "id": "1",
+          "texto": "Hamburguesa"
+        },
+        {
+          "id": "2",
+          "texto": "Sopa"
+        },
+        {
+          "id": "3",
+          "texto": "Curry"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "id_cuestionario": "4",
+      "tipo": "MO",
+      "planteo": "¿Qué suele acompañar a una hamburguesa?",
+      "opciones": [
+        {
+          "id": "1",
+          "texto": "Papas fritas"
+        },
+        {
+          "id": "2",
+          "texto": "Arroz"
+        },
+        {
+          "id": "3",
+          "texto": "Pan dulce"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "id_cuestionario": "4",
+      "tipo": "MO",
+      "planteo": "¿Qué ingrediente principal tiene un hot dog?",
+      "opciones": [
+        {
+          "id": "1",
+          "texto": "Salchicha"
+        },
+        {
+          "id": "2",
+          "texto": "Carne"
+        },
+        {
+          "id": "3",
+          "texto": "Pollo"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "id_cuestionario": "4",
+      "tipo": "MO",
+      "planteo": "¿Qué es una pizza?",
+      "opciones": [
+        {
+          "id": "1",
+          "texto": "Masa con ingredientes horneada"
+        },
+        {
+          "id": "2",
+          "texto": "Pan hervido"
+        },
+        {
+          "id": "3",
+          "texto": "Tarta de frutas"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "id_cuestionario": "4",
+      "tipo": "MO",
+      "planteo": "¿Qué comida rápida es popular en Japón?",
+      "opciones": [
+        {
+          "id": "1",
+          "texto": "Ramen"
+        },
+        {
+          "id": "2",
+          "texto": "Tamales"
+        },
+        {
+          "id": "3",
+          "texto": "Pabellón"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "id_cuestionario": "4",
+      "tipo": "MO",
+      "planteo": "¿Qué bebida acompaña frecuentemente la comida rápida?",
+      "opciones": [
+        {
+          "id": "1",
+          "texto": "Refresco"
+        },
+        {
+          "id": "2",
+          "texto": "Vino"
+        },
+        {
+          "id": "3",
+          "texto": "Té verde"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "id_cuestionario": "4",
+      "tipo": "MO",
+      "planteo": "¿Qué tipo de pan se usa en un sándwich?",
+      "opciones": [
+        {
+          "id": "1",
+          "texto": "Pan de molde"
+        },
+        {
+          "id": "2",
+          "texto": "Pan de pita"
+        },
+        {
+          "id": "3",
+          "texto": "Panqueque"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "id_cuestionario": "4",
+      "tipo": "MO",
+      "planteo": "¿Cuál es un snack salado?",
+      "opciones": [
+        {
+          "id": "1",
+          "texto": "Papas fritas"
+        },
+        {
+          "id": "2",
+          "texto": "Caramelos"
+        },
+        {
+          "id": "3",
+          "texto": "Galletas"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "id_cuestionario": "4",
+      "tipo": "MO",
+      "planteo": "¿Qué cadena es famosa por su pollo frito?",
+      "opciones": [
+        {
+          "id": "1",
+          "texto": "KFC"
+        },
+        {
+          "id": "2",
+          "texto": "Domino’s"
+        },
+        {
+          "id": "3",
+          "texto": "Subway"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "id_cuestionario": "4",
+      "tipo": "MO",
+      "planteo": "¿Qué contiene comúnmente una empanada?",
+      "opciones": [
+        {
+          "id": "1",
+          "texto": "Carne"
+        },
+        {
+          "id": "2",
+          "texto": "Jalea"
+        },
+        {
+          "id": "3",
+          "texto": "Chocolate"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "id_cuestionario": "4",
+      "tipo": "TEXTO",
+      "planteo": "¿Cuál es tu comida rápida favorita y por qué?"
+    },
+    {
+      "id": "12",
+      "id_cuestionario": "4",
+      "tipo": "TEXTO",
+      "planteo": "Describe una hamburguesa ideal."
+    },
+    {
+      "id": "13",
+      "id_cuestionario": "4",
+      "tipo": "TEXTO",
+      "planteo": "¿Qué diferencias hay entre fast food y comida casera?"
+    },
+    {
+      "id": "14",
+      "id_cuestionario": "4",
+      "tipo": "TEXTO",
+      "planteo": "¿Cuál fue la última comida rápida que comiste?"
+    },
+    {
+      "id": "15",
+      "id_cuestionario": "4",
+      "tipo": "TEXTO",
+      "planteo": "¿Qué opinas del consumo frecuente de snacks?"
+    },
+    {
+      "id": "16",
+      "id_cuestionario": "4",
+      "tipo": "TEXTO",
+      "planteo": "¿Cómo prepararías un sándwich saludable?"
+    },
+    {
+      "id": "17",
+      "id_cuestionario": "4",
+      "tipo": "TEXTO",
+      "planteo": "¿Qué ingredientes lleva tu pizza favorita?"
+    },
+    {
+      "id": "18",
+      "id_cuestionario": "4",
+      "tipo": "TEXTO",
+      "planteo": "¿Qué snack recomendarías para una película?"
+    },
+    {
+      "id": "19",
+      "id_cuestionario": "4",
+      "tipo": "TEXTO",
+      "planteo": "¿Comida rápida o tradicional? Da tus razones."
+    },
+    {
+      "id": "20",
+      "id_cuestionario": "4",
+      "tipo": "TEXTO",
+      "planteo": "¿Cómo prepararías papas fritas caseras?"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "1",
+      "email": "test@test.com"
+    },
+    {
+      "id": "66dc",
+      "email": "camigonpal2@gmail.com"
+    },
+    {
+      "id": "2f4b",
+      "email": "x@x"
+    },
+    {
+      "id": "8743",
+      "email": "q@2.c"
+    },
+    {
+      "id": "0b88",
+      "email": "1@2"
+    },
+    {
+      "id": "b7d1",
+      "email": "w@3"
+    }
+  ],
+  "respuesta": [
+    {
+      "id_usuario": "1",
+      "id_cuestionario": "1",
+      "id_pregunta": "1",
+      "id_opcion": "1",
+      "respuesta": "Tacos",
+      "fecha_creacion": "2023-10-01T12:00:00Z",
+      "id": "b402"
+    },
+    {
+      "id_usuario": "2f4b",
+      "id_cuestionario": "2",
+      "id_pregunta": "1",
+      "id_opcion": "2",
+      "respuesta": "Agua",
+      "fecha_respuesta": "2025-05-19T23:23:14.736Z",
+      "id": "3b9d"
+    },
+    {
+      "id": "9f25",
+      "id_usuario": "8743",
+      "id_cuestionario": "1",
+      "id_pregunta": "1",
+      "id_opcion": "1",
+      "respuesta": "Tacos",
+      "fecha_respuesta": "2025-05-20T12:58:59.980Z"
+    },
+    {
+      "id": "5e08",
+      "id_usuario": "8743",
+      "id_cuestionario": "1",
+      "id_pregunta": "2",
+      "id_opcion": "2",
+      "respuesta": "Italia",
+      "fecha_respuesta": "2025-05-20T17:25:49.186Z"
+    }
+  ]
+}

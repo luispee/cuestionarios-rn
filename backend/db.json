@@ -1,22 +1,22 @@
 {
   "cuestionario": [
     {
-      "id": 1,
+      "id": "1",
       "nombre": "Comidas del Mundo",
       "descripcion": "Cuestionario sobre comidas del mundo"
     },
     {
-      "id": 2,
+      "id": "2",
       "nombre": "Bebidas Populares",
       "descripcion": "Cuestionario sobre bebidas populares"
     },
     {
-      "id": 3,
+      "id": "3",
       "nombre": "Dulces y Postres",
       "descripcion": "Cuestionario sobre dulces y postres"
     },
     {
-      "id": 4,
+      "id": "4",
       "nombre": "Comidas Rápidas",
       "descripcion": "Cuestionario sobre comidas rápidas"
     },
@@ -1092,6 +1092,42 @@
     {
       "id": "b7d1",
       "email": "w@3"
+    },
+    {
+      "id": "375c",
+      "email": "1q"
+    },
+    {
+      "id": "6969",
+      "email": "1q@g.m"
+    },
+    {
+      "id": "39b3",
+      "email": "q@x"
+    },
+    {
+      "id": "dd70",
+      "email": "q@d"
+    },
+    {
+      "id": "bbdd",
+      "email": "a@z"
+    },
+    {
+      "id": "b529",
+      "email": "a@z.x"
+    },
+    {
+      "id": "afea",
+      "email": "s@f"
+    },
+    {
+      "id": "23b3",
+      "email": "s@f.m"
+    },
+    {
+      "id": "8585",
+      "email": "r@g"
     }
   ],
   "respuesta": [
@@ -1130,6 +1166,15 @@
       "id_opcion": "2",
       "respuesta": "Italia",
       "fecha_respuesta": "2025-05-20T17:25:49.186Z"
+    },
+    {
+      "id": "d94f",
+      "id_usuario": "8585",
+      "id_cuestionario": "1",
+      "id_pregunta": "1",
+      "id_opcion": "3",
+      "respuesta": "Pizza",
+      "fecha_respuesta": "2025-06-16T19:39:42.657"
     }
   ]
 }

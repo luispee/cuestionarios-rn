@@ -1,33 +1,33 @@
 import React, { useState } from "react";
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, ActivityIndicator, Alert } from "react-native";
-import { useNavigation } from "@react-navigation/native";
 import { useTheme } from '../context/DarkContext.jsx';
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { useRouter } from 'expo-router';
 
 function Login() {
     const [email, setEmail] = useState("");
     const [loading, setLoading] = useState(false);
-    const navigation = useNavigation();
+    const router = useRouter();
     const { darkMode } = useTheme();
 
     async function upSubmit() {
         setLoading(true);
         try {
-            const response = await fetch(`http://localhost:3000/usuarios?email=${encodeURIComponent(email)}`);
+            const response = await fetch(`http://10.13.22.3:3000/usuarios?email=${encodeURIComponent(email)}`);
             const data = await response.json();
 
             if (data.length > 0) {
                 await AsyncStorage.setItem("usuario", JSON.stringify(data[0]));
-                navigation.navigate("Cuestionarios");
+                router.replace('/cuestionarios');
             } else {
-                const regResponse = await fetch('http://localhost:3000/usuarios', {
+                const regResponse = await fetch('http://10.13.22.3:3000/usuarios', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ email })
                 });
                 const regData = await regResponse.json();
                 await AsyncStorage.setItem("usuario", JSON.stringify(regData));
-                navigation.navigate("Cuestionarios");
+                router.replace('/cuestionarios');
             }
         } catch (error) {
             Alert.alert("Error", "No se pudo iniciar sesión.");

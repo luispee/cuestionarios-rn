@@ -1,23 +1,18 @@
 import React, { useState, useEffect } from "react";
 import { View, Text, ScrollView, TouchableOpacity, StyleSheet, ActivityIndicator, TextInput, Alert } from "react-native";
-import { useRoute } from "@react-navigation/native";
 import { useTheme } from '../context/DarkContext.jsx';
 import { fetchJson } from '../components/utils.js';
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-function Respuestas() {
+function Respuestas({ id_cuestionario, id_pregunta }) {
     const [respuestas, setRespuestas] = useState([]);
     const [respuestaPrevias, setRespuestaPrevias] = useState({});
     const [fechaRespuestas, setFechaRespuestas] = useState({});
     const [respuestaMO, setRespuestaMO] = useState(null);
     const [respuestaTP, setRespuestaTP] = useState("");
     const { darkMode } = useTheme();
-    const route = useRoute();
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-
-    const id_cuestionario = route.params?.id_cuestionario;
-    const id_pregunta = route.params?.id_pregunta;
 
     const desfaseHorario = (new Date()).getTimezoneOffset() * 60000;
     const ahora = (new Date(Date.now() - desfaseHorario)).toISOString().slice(0, -1);
@@ -40,7 +35,7 @@ function Respuestas() {
     useEffect(() => {
         const fetchRespuestas = async () => {
             try {
-                const dataPreguntas = await fetchJson(`http://localhost:3000/pregunta/`);
+                const dataPreguntas = await fetchJson(`/pregunta/`);
                 setRespuestas(dataPreguntas);
             } catch (err) {
                 setError(err.message);
@@ -55,7 +50,7 @@ function Respuestas() {
                 const usuario = userStr ? JSON.parse(userStr) : null;
                 if (!usuario) throw new Error("Usuario no encontrado en sesión");
 
-                const res = await fetch(`http://localhost:3000/respuesta?id_usuario=${usuario.id}`);
+                const res = await fetch(`http://10.13.22.3:3000/respuesta?id_usuario=${usuario.id}`);
                 if (!res.ok) throw new Error("Error al cargar respuestas del usuario");
                 const data = await res.json();
 
@@ -91,7 +86,7 @@ function Respuestas() {
 
     async function respuestaExistenteGuardada() {
         if (!usuario) return null;
-        const checkRes = await fetch(`http://localhost:3000/respuesta?id_usuario=${usuario.id}&id_pregunta=${id_pregunta}`);
+        const checkRes = await fetch(`http://10.13.22.3:3000/respuesta?id_usuario=${usuario.id}&id_pregunta=${id_pregunta}`);
         if (!checkRes.ok) throw new Error("No se pudo verificar si la respuesta ya existe");
 
         const todasRespuestas = await checkRes.json();
@@ -111,8 +106,8 @@ function Respuestas() {
             const respuestaExistente = await respuestaExistenteGuardada();
 
             const url = respuestaExistente
-                ? `http://localhost:3000/respuesta/${respuestaExistente.id}`
-                : `http://localhost:3000/respuesta`;
+                ? `http://10.13.22.3:3000/respuesta/${respuestaExistente.id}`
+                : `http://10.13.22.3:3000/respuesta`;
 
             const metodo = respuestaExistente ? "PUT" : "POST";
 
@@ -151,8 +146,8 @@ function Respuestas() {
             const respuestaExistente = await respuestaExistenteGuardada();
 
             const url = respuestaExistente
-                ? `http://localhost:3000/respuesta/${respuestaExistente.id}`
-                : `http://localhost:3000/respuesta`;
+                ? `http://10.13.22.3:3000/respuesta/${respuestaExistente.id}`
+                : `http://10.13.22.3:3000/respuesta`;
 
             const metodo = respuestaExistente ? "PUT" : "POST";
 

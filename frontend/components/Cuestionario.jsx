@@ -2,17 +2,19 @@ import React, { useState, useEffect } from "react";
 import { View, Text, ScrollView, TouchableOpacity, StyleSheet, ActivityIndicator } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { useTheme } from '../context/DarkContext.jsx';
+import { useRouter } from 'expo-router';
 
 function Cuestionarios() {
+    console.log('Renderizando Cuestionarios');
     const [cuestionarios, setCuestionarios] = useState([]);
-    const navigation = useNavigation();
     const { darkMode } = useTheme();
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    const router = useRouter();
 
     const fetchCuestionarios = async () => {
         try {
-            const response = await fetch(`http://localhost:3000/cuestionario`);
+            const response = await fetch(`http://10.13.22.3:3000/cuestionario`);
             if (!response.ok) throw new Error("Network response was not ok");
             const data = await response.json();
             setCuestionarios(data);
@@ -24,7 +26,7 @@ function Cuestionarios() {
     };
 
     const MostrarPreguntas = (id_cuestionario) => {
-        navigation.navigate("Preguntas", { id_cuestionario });
+        router.push(`/cuestionarios/${id_cuestionario}`);
     };
 
     useEffect(() => {

@@ -1,19 +1,16 @@
 import React, { useState, useEffect } from "react";
-import { View, Text, ScrollView, TouchableOpacity, StyleSheet, ActivityIndicator } from "react-native";
-import { useNavigation, useRoute } from "@react-navigation/native";
+import { Text, ScrollView, TouchableOpacity, StyleSheet, ActivityIndicator } from "react-native";
 import { useTheme } from '../context/DarkContext.jsx';
 import { fetchJson } from '../components/utils.js';
+import { useRouter } from "expo-router";
 
-function Preguntas() {
+function Preguntas({ id_cuestionario}) {
     const [cuestionario, setCuestionario] = useState(null);
     const [preguntas, setPreguntas] = useState([]);
-    const navigation = useNavigation();
-    const route = useRoute();
+    const router = useRouter();
     const { darkMode } = useTheme();
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-
-    const id_cuestionario = route.params?.id_cuestionario;
 
     const colores = [
         '#b39ddb', '#9575cd', '#7e57c2', '#6f00ff', '#512da8',
@@ -37,9 +34,9 @@ function Preguntas() {
         fetchData();
     }, [id_cuestionario]);
 
-    const Responder = (id_cuestionario, id_pregunta, tipo) => {
-        navigation.navigate("PreguntaDetalle", { id_cuestionario, id_pregunta, tipo });
-    };
+    const Responder = (id_cuestionario, id_pregunta) => {
+        router.push(`/cuestionarios/${id_cuestionario}/pregunta/${id_pregunta}`);
+};
 
     if (loading) return <ActivityIndicator size="large" color="#6f00ff" style={{ flex: 1, justifyContent: 'center' }} />;
     if (error) return <Text style={styles.error}>Error: {error}</Text>;

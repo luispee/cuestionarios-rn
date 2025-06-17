@@ -1,6 +1,6 @@
 import axios from 'axios';
-
-const API_BASE = 'http://10.13.22.3:3001/';
+import { API_URL } from "./config.js";
+export const API_BASE = API_URL;
 
 const axiosInstance = axios.create({
     baseURL: API_BASE,

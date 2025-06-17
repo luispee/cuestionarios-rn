@@ -19,11 +19,6 @@
       "id": "4",
       "nombre": "Comidas Rápidas",
       "descripcion": "Cuestionario sobre comidas rápidas"
-    },
-    {
-      "id": "0627",
-      "nombre": "Nuevo Q",
-      "descripcion": "Si sale numerico el id"
     }
   ],
   "pregunta": [
@@ -1074,60 +1069,8 @@
       "email": "test@test.com"
     },
     {
-      "id": "66dc",
-      "email": "camigonpal2@gmail.com"
-    },
-    {
-      "id": "2f4b",
-      "email": "x@x"
-    },
-    {
-      "id": "8743",
-      "email": "q@2.c"
-    },
-    {
-      "id": "0b88",
-      "email": "1@2"
-    },
-    {
-      "id": "b7d1",
-      "email": "w@3"
-    },
-    {
-      "id": "375c",
-      "email": "1q"
-    },
-    {
-      "id": "6969",
-      "email": "1q@g.m"
-    },
-    {
-      "id": "39b3",
-      "email": "q@x"
-    },
-    {
-      "id": "dd70",
-      "email": "q@d"
-    },
-    {
-      "id": "bbdd",
-      "email": "a@z"
-    },
-    {
-      "id": "b529",
-      "email": "a@z.x"
-    },
-    {
-      "id": "afea",
-      "email": "s@f"
-    },
-    {
-      "id": "23b3",
-      "email": "s@f.m"
-    },
-    {
-      "id": "8585",
-      "email": "r@g"
+      "id": "b846",
+      "email": "a@f"
     }
   ],
   "respuesta": [
@@ -1175,6 +1118,24 @@
       "id_opcion": "3",
       "respuesta": "Pizza",
       "fecha_respuesta": "2025-06-16T19:39:42.657"
+    },
+    {
+      "id": "0d41",
+      "id_usuario": "e71c",
+      "id_cuestionario": "1",
+      "id_pregunta": "1",
+      "id_opcion": "1",
+      "respuesta": "Tacos",
+      "fecha_respuesta": "2025-06-17T23:24:10.240"
+    },
+    {
+      "id": "50f3",
+      "id_usuario": "e71c",
+      "id_cuestionario": "1",
+      "id_pregunta": "1",
+      "id_opcion": "2",
+      "respuesta": "Sushi",
+      "fecha_respuesta": "2025-06-17T23:24:15.481"
     }
   ]
 }

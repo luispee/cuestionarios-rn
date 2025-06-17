@@ -1,42 +1,8 @@
-import React, { useState, useEffect } from "react";
 import { Text, ScrollView, TouchableOpacity, StyleSheet, ActivityIndicator } from "react-native";
-import { useTheme } from '../context/DarkContext.jsx';
-import { fetchJson } from '../components/utils.js';
-import { useRouter } from "expo-router";
+import { usePreguntas } from "../hooks/usePregunta.js";
 
-function Preguntas({ id_cuestionario}) {
-    const [cuestionario, setCuestionario] = useState(null);
-    const [preguntas, setPreguntas] = useState([]);
-    const router = useRouter();
-    const { darkMode } = useTheme();
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
-
-    const colores = [
-        '#b39ddb', '#9575cd', '#7e57c2', '#6f00ff', '#512da8',
-        '#FF6B6B', '#4ECDC4', '#556270', '#C06C84', '#6C5B7B',
-        '#355C7D', '#FFA726', '#26A69A', '#5C6BC0', '#EF5350'
-    ];
-
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const preguntasData = await fetchJson(`/pregunta?id_cuestionario=${id_cuestionario}`);
-                setPreguntas(preguntasData);
-                const cuestionarioData = await fetchJson(`/cuestionario?id=${id_cuestionario}`);
-                setCuestionario(cuestionarioData[0]);
-            } catch (err) {
-                setError(err.message);
-            } finally {
-                setLoading(false);
-            }
-        };
-        fetchData();
-    }, [id_cuestionario]);
-
-    const Responder = (id_cuestionario, id_pregunta) => {
-        router.push(`/cuestionarios/${id_cuestionario}/pregunta/${id_pregunta}`);
-};
+function Preguntas({ id_cuestionario }) {
+    const {cuestionario, preguntas,darkMode, loading, error, colores, Responder} = usePreguntas(id_cuestionario);
 
     if (loading) return <ActivityIndicator size="large" color="#6f00ff" style={{ flex: 1, justifyContent: 'center' }} />;
     if (error) return <Text style={styles.error}>Error: {error}</Text>;

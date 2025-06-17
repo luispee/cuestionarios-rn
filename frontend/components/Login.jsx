@@ -1,41 +1,9 @@
-import React, { useState } from "react";
-import { View, Text, TextInput, TouchableOpacity, StyleSheet, ActivityIndicator, Alert } from "react-native";
-import { useTheme } from '../context/DarkContext.jsx';
-import AsyncStorage from "@react-native-async-storage/async-storage";
-import { useRouter } from 'expo-router';
-
+import React, { use, useLayoutEffect, useState } from "react";
+import { View, Text, TextInput, TouchableOpacity, StyleSheet, ActivityIndicator } from "react-native";
+import { useLogin } from "../hooks/useLogin.js";
 function Login() {
-    const [email, setEmail] = useState("");
-    const [loading, setLoading] = useState(false);
-    const router = useRouter();
-    const { darkMode } = useTheme();
-
-    async function upSubmit() {
-        setLoading(true);
-        try {
-            const response = await fetch(`http://10.13.22.3:3000/usuarios?email=${encodeURIComponent(email)}`);
-            const data = await response.json();
-
-            if (data.length > 0) {
-                await AsyncStorage.setItem("usuario", JSON.stringify(data[0]));
-                router.replace('/cuestionarios');
-            } else {
-                const regResponse = await fetch('http://10.13.22.3:3000/usuarios', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ email })
-                });
-                const regData = await regResponse.json();
-                await AsyncStorage.setItem("usuario", JSON.stringify(regData));
-                router.replace('/cuestionarios');
-            }
-        } catch (error) {
-            Alert.alert("Error", "No se pudo iniciar sesión.");
-        } finally {
-            setLoading(false);
-        }
-    }
-
+   
+    const {email, setEmail, loading, upSubmit, darkMode} = useLogin();
     return (
         <View style={[styles.container, darkMode && styles.containerDark]}>
             <View style={[styles.form, darkMode && styles.formDark]}>
@@ -71,60 +39,71 @@ function Login() {
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: "#fafafa",
-        justifyContent: "center",
-        alignItems: "center",
-    },
-    containerDark: {
-        backgroundColor: "#222",
-    },
-    form: {
-        width: "90%",
-        maxWidth: 400,
-        backgroundColor: "#fff",
-        padding: 24,
-        borderRadius: 12,
-        elevation: 3,
-    },
-    formDark: {
-        backgroundColor: "#333",
-    },
-    label: {
-        fontSize: 16,
-        marginBottom: 12,
-        color: "#222",
-    },
-    labelDark: {
-        color: "#fafafa",
-    },
-    input: {
-        borderWidth: 1,
-        borderColor: "#bbb",
-        borderRadius: 8,
-        padding: 12,
-        marginBottom: 16,
-        fontSize: 16,
-        color: "#222",
-        backgroundColor: "#fafafa",
-    },
-    inputDark: {
-        borderColor: "#444",
-        color: "#fafafa",
-        backgroundColor: "#222",
-    },
-    button: {
-        backgroundColor: "#6f00ff",
-        paddingVertical: 14,
-        borderRadius: 8,
-        alignItems: "center",
-    },
-    buttonText: {
-        color: "#fff",
-        fontSize: 16,
-        fontWeight: "bold",
-    },
+  container: {
+    flex: 1,
+    backgroundColor: "#f4f4f4",
+    justifyContent: "center",
+    alignItems: "center",
+    padding: 100,
+  },
+  containerDark: {
+    backgroundColor: "#1e1e1e",
+  },
+  form: {
+    width: "100%",
+    maxWidth: 360,
+    backgroundColor: "#ffffff",
+    padding: 24,
+    borderRadius: 16,
+    shadowColor: "#000",
+    shadowOpacity: 0.1,
+    shadowOffset: { width: 0, height: 4 },
+    shadowRadius: 8,
+    elevation: 6,
+  },
+  formDark: {
+    backgroundColor: "#2b2b2b",
+    shadowColor: "#000",
+  },
+  label: {
+    fontSize: 18,
+    marginBottom: 8,
+    color: "#333333",
+    fontWeight: "500",
+  },
+  labelDark: {
+    color: "#e0e0e0",
+  },
+  input: {
+    borderWidth: 1,
+    borderColor: "#ccc",
+    borderRadius: 10,
+    padding: 14,
+    marginBottom: 20,
+    fontSize: 16,
+    backgroundColor: "#f9f9f9",
+    color: "#333",
+  },
+  inputDark: {
+    backgroundColor: "#1c1c1c",
+    borderColor: "#444",
+    color: "#f1f1f1",
+  },
+  button: {
+    backgroundColor: "#6f00ff",
+    paddingVertical: 16,
+    borderRadius: 12,
+    alignItems: "center",
+    shadowColor: "#6f00ff",
+    shadowOpacity: 0.3,
+    shadowOffset: { width: 0, height: 4 },
+    shadowRadius: 6,
+  },
+  buttonText: {
+    color: "#ffffff",
+    fontSize: 16,
+    fontWeight: "bold",
+  },
 });
 
 export default Login;

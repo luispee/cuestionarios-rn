@@ -1,6 +1,9 @@
 import { createContext, useContext, useState } from 'react';
 
-export const ThemeContext = createContext('light');
+export const ThemeContext = createContext({
+  darkMode: false,
+  toggleTheme: () => {},
+});
 
 export const ThemeProvider = ({ children }) => {
   const [darkMode, setDarkMode] = useState(false);

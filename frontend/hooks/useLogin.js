@@ -8,7 +8,7 @@ export function useLogin() {
     const [email, setEmail] = useState("");
     const [loading, setLoading] = useState(false);
     const router = useRouter();
-    const { darkMode } = useTheme();
+    const { darkMode, toggleTheme } = useTheme();
 
     async function upSubmit() {
         setLoading(true);
@@ -41,6 +41,7 @@ export function useLogin() {
         setEmail,
         loading,
         upSubmit,
-        darkMode
+        darkMode,
+        toggleTheme
     };
 }
